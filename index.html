@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>For You</title>
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #ffb6c1, #ffc0cb);
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      color: white;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    button {
+      background: white;
+      color: #ff5c8a;
+      border: none;
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-top: 30px;
+    }
+
+    .message {
+      display: none;
+      margin-top: 40px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Happy Valentine’s Day ❤️</h1>
+
+  <button onclick="showMessage()">Click me</button>
+
+  <div class="message" id="msg">
+    <p>
+      大好きだよ。<br>
+      いつもありがとう。
+    </p>
+    <p>
+      I love you.<br>
+      Thank you for everything.
+    </p>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("msg").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
